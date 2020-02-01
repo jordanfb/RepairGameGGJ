@@ -24,10 +24,11 @@ using UnityEngine;
 
 //    // Called by the Dialogue Runner to notify us that a node finished
 //    // running. 
-//    public void NodeComplete(string nodeName) {
+//    public void NodeComplete(string nodeName)
+//    {
 //        // Log that the node has been run.
 //        _visitedNodes.Add(nodeName);
 //    }
 
-    
+
 //}

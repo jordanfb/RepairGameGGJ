@@ -24,26 +24,40 @@
 
 //*/
 
-//using UnityEngine;
+using UnityEngine;
 
-///// attached to the non-player characters, and stores the name of the Yarn
-///// node that should be run when you talk to them.
-//namespace Yarn.Unity.Example {
-//    public class NPC : MonoBehaviour {
+/// attached to the non-player characters, and stores the name of the Yarn
+/// node that should be run when you talk to them.
 
-//        public string characterName = "";
+public class OurNPC : MonoBehaviour
+{
 
-//        public string talkToNode = "";
+    public string characterName = "";
 
-//        [Header("Optional")]
-//        public YarnProgram scriptToLoad;
+    public string talkToNode = "";
+    public bool onlyPlayOnce = false;
 
-//        void Start () {
-//            if (scriptToLoad != null) {
-//                DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-//                dialogueRunner.Add(scriptToLoad);                
-//            }
-//        }
-//    }
+    [Header("Optional")]
+    public YarnProgram scriptToLoad;
 
-//}
+    private bool alreadyPlayed = false;
+
+    void Start()
+    {
+        if (scriptToLoad != null)
+        {
+            Yarn.Unity.DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+            dialogueRunner.Add(scriptToLoad);
+        }
+    }
+
+    public bool CanPlay()
+    {
+        return !(onlyPlayOnce && alreadyPlayed); // only play if it isn't told to only play once and isn't already played
+    }
+
+    public void Played()
+    {
+        alreadyPlayed = true;
+    }
+}
