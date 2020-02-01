@@ -19,6 +19,7 @@ public class YarnspinnerUIHelper : MonoBehaviour
             if (currObject.activeSelf && currObject.GetComponent<UnityEngine.UI.Button>())
             {
                 EventSystem.current.SetSelectedGameObject(currObject);
+                //Debug.Log("Selected first object: "+ currObject.name);
                 break;
             }
         }
