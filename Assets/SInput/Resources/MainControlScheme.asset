@@ -88,6 +88,11 @@ MonoBehaviour:
     gamepadInputs: 17000000
     mouseInputs: 
     virtualInputs: []
+  - name: Menu
+    keyboardInputs: 32000000
+    gamepadInputs: 17000000
+    mouseInputs: 
+    virtualInputs: []
   smartControls:
   - name: Horizontal
     positiveControl: Right
