@@ -39,7 +39,7 @@ public class PlayerDialogueManager : MonoBehaviour
     {
         OurNPC npc = other.gameObject.GetComponentInChildren<OurNPC>();
         //print("Left collision with " + other.gameObject.name);
-        if (npc != null)
+        if (npc == lastInteractedNPC)
         {
             lastInteractedNPC = null; // reset the node so we can talk to it again
         }
