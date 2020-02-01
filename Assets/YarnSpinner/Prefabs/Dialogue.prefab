@@ -728,8 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5935829474793368793}
   - component: {fileID: 5935829474793368798}
-  - component: {fileID: 5935829474793368799}
-  - component: {fileID: 5935829474793368796}
+  - component: {fileID: 2867737796940308955}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -766,7 +765,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
---- !u!114 &5935829474793368799
+--- !u!114 &2867737796940308955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -775,7 +774,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5935829474793368797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f5ad66a50d4ad14c8bb9209bb371cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -785,19 +784,12 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &5935829474793368796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5935829474793368797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d49b7c1bcd2e07499844da127be038d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ForceModuleActive: 0
+  m_SinputUpButton: Up
+  m_SinputDownButton: Down
+  m_SinputLeftButton: Left
+  m_SinputRightButton: Right
+  m_SinputSubmitButton: Submit
+  m_SinputCancelButton: Cancel
 --- !u!1 &5935829474853694787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,11 +1256,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yarnScripts: []
+  textLanguage: 
   variableStorage: {fileID: 5935829475398715335}
   dialogueUI: {fileID: 5935829475398715334}
   startNode: 
   startAutomatically: 0
   automaticCommands: 1
+  onNodeComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5935829475398715334
 MonoBehaviour:
   m_ObjectHideFlags: 0

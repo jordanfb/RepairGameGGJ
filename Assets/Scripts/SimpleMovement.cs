@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class SimpleMovement : MonoBehaviour
 {
+    public bool isAllowedToMove = true;
+
+
     [SerializeField]
     private CharacterController characterController = null; // to move
     [SerializeField]
@@ -77,19 +80,25 @@ public class SimpleMovement : MonoBehaviour
 
     private void UpdateMovement()
     {
-        Vector3 input = new Vector3(Sinput.GetAxis(strafeAxis), 0, Sinput.GetAxis(forwardsAxis));
-        if (input.sqrMagnitude > 1)
+        Vector3 input = Vector3.zero;
+        float df = 0;
+        if (isAllowedToMove)
         {
-            input.Normalize();
+            input = new Vector3(Sinput.GetAxis(strafeAxis), 0, Sinput.GetAxis(forwardsAxis));
+            if (input.sqrMagnitude > 1)
+            {
+                input.Normalize();
+            }
+
+            df = Sinput.GetAxis(turnAxis) * turnSpeed * Time.fixedDeltaTime;
+            transform.Rotate(0, df, 0);
+
+            float currspeed = walkSpeed * (Input.GetKey(sprintKey) ? sprintMultiplier : 1) * Time.fixedDeltaTime;
+            Vector3 dpos = input * currspeed;
+
+            characterController.SimpleMove(transform.forward * dpos.z + transform.right * dpos.x);
         }
 
-        float df = Sinput.GetAxis(turnAxis) * turnSpeed * Time.fixedDeltaTime;
-        transform.Rotate(0, df, 0);
-
-        float currspeed = walkSpeed * (Input.GetKey(sprintKey) ? sprintMultiplier : 1) * Time.fixedDeltaTime;
-        Vector3 dpos = input * currspeed;
-
-        characterController.SimpleMove(transform.forward * dpos.z + transform.right * dpos.x);
 
         // move leg position!
         if (characterController.velocity.sqrMagnitude > 0 || Mathf.Abs(df) > 0 || moveToRestingPosition)
