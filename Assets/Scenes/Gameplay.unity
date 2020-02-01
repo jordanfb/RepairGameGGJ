@@ -1835,7 +1835,7 @@ MonoBehaviour:
   characterController: {fileID: 1404154484}
   tiltBody: {fileID: 78138870}
   walkSpeed: 250
-  turnSpeed: 30
+  turnSpeed: 150
   sprintMultiplier: 2
   tiltMultiplier: 15
   legGroups:
