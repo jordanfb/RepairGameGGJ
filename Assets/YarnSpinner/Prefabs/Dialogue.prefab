@@ -1222,6 +1222,8 @@ GameObject:
   - component: {fileID: 5935829475398715329}
   - component: {fileID: 5935829475398715334}
   - component: {fileID: 5935829475398715335}
+  - component: {fileID: 1918809208262856104}
+  - component: {fileID: 6720400362884515079}
   m_Layer: 0
   m_Name: Dialogue Runner
   m_TagString: Untagged
@@ -1359,10 +1361,32 @@ MonoBehaviour:
         m_CallState: 2
   onOptionsStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6720400362884515079}
+        m_MethodName: SelectFirstOption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onOptionsEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6720400362884515079}
+        m_MethodName: DeselectUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onCommand:
     m_PersistentCalls:
       m_Calls: []
@@ -1380,6 +1404,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultVariables: []
   debugTextView: {fileID: 0}
+--- !u!114 &1918809208262856104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5935829475398715332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3414bb16e3354487c869122a1d6b873e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueRunner: {fileID: 5935829475398715329}
+--- !u!114 &6720400362884515079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5935829475398715332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b0d1ea1d1550d4cb5dcf74ab191e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OptionButtonParent: {fileID: 5935829474855343396}
 --- !u!1 &5935829475522760373
 GameObject:
   m_ObjectHideFlags: 0
