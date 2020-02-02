@@ -17,6 +17,7 @@ public class CollectedItemTracker : MonoBehaviour
         dialogueRunner.RegisterFunction("collected", 1, delegate (Yarn.Value[] parameters)
         {
             var itemName = parameters[0];
+            Debug.Log("Check if collected " + itemName.AsString + " : " + _collectedItems.Contains(itemName.AsString));
             return _collectedItems.Contains(itemName.AsString);
         });
 

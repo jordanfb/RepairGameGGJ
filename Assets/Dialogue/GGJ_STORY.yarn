@@ -43,10 +43,16 @@ AI: Message was received shortly before crash landing occurred. Unfortunately un
 AI: Last significant transmission before this with SUZAN was recorded 3 years ago. 
 <<wait 1>> 
 AI: I would recommend calling her back... 
-<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
+===
+title: HOTSPRINGS.CUBE
+tags: BANANA SALAMANDAER MEDIA
+colorID: 0
+position: 805,105
+---
+<<if collected("mesacube") and collected("cavecube")>> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
-   AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
+   AI: No time to relax CAPTAIN.
 <<endif>> 
 ===
 title: CAVE
@@ -77,10 +83,16 @@ AI: Ship records indicate that SHERIFF MATTE is a member of the Galatic Patrol H
 AI: Uhm...O-ohh never mind CAPTAIN. I didn't mean to... I mean it's not as if... 
 << wait 1>> 
 AI: ...Forget I said anything
-<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
+===
+title: CAVE.CUBE
+tags: BANANA SALAMANDAER MEDIA
+colorID: 0
+position: 810,105
+---
+<<if collected("mesacube") and collected("hotspringscube")>> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
-   AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
+   AI: Time to head back out of the cave CAPTAIN.
 <<endif>> 
 ===
 title: MESA
@@ -106,10 +118,16 @@ AI: End transmission.
 AI: Records indicate that Banana Salamander Media is a hodge podge media outfit peddling sensational news and content with questionable accuracy. They are notorious for rampant misinformation and FAKE NEWS across the galaxy.
 <<wait 1>> 
 AI: CAPTAIN, I would recommend disregarding the contents of that last transmission. It somehow bypassed SPAM filters due to the current state of disrepair.
-<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
+===
+title: MESA.CUBE
+tags: BANANA SALAMANDAER MEDIA
+colorID: 0
+position: 799,105
+---
+<<if collected("hotspringscube") and collected("cavecube") >> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
-   AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
+   AI: Nice work CAPTAIN.
 <<endif>> 
 ===
 title: SHIPASSESSMENT
