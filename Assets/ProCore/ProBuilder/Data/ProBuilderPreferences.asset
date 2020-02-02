@@ -16,13 +16,13 @@ MonoBehaviour:
   - pbUVMaterialPreview
   - pb_UVTemplate_transparentBackground
   - pb_UVTemplate_hideGrid
+  - pbGenerateUV2PerObject
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
-  - pbDefaultSelectionMode
-  - pb_GIWorkflowMode
-  - pbEdgeSubdivisions
   - pb_UVTemplate_imageSize
+  - pb_GIWorkflowMode
+  - pbDefaultSelectionMode
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
@@ -32,14 +32,14 @@ MonoBehaviour:
   - pb_UVTemplate_backgroundColor
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 000000
-  m_Int_values: 000000000000000001000000010000000200000000040000
+  m_Bool_values: 00010100
+  m_Int_values: 0000000000000000000400000100000002000000
   m_Float_values:
   - 0
   - 0
   m_String_values:
   - Assets/ProCore/ProBuilder/Data/Default Material Palette.asset
-  - RGBA(0.000, 1.000, 0.225, 1.000)
+  - RGBA(1.000, 0.000, 0.000, 1.000)
   - RGBA(1.000, 1.000, 1.000, 1.000)
   m_Color_values: []
   m_Material_values: []
