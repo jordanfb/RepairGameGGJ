@@ -13,10 +13,10 @@ position: 59,145
 	<<wait 1>> 
 	AI: A-hem, sorry about that but Galatic protocol requires I inform you that the vessel has sustained some significant damage during our crash landing.
 	AI: Three core components, the COSMIC CUBES, have dislodged and need to be reinstalled for repairs to be complete.
-	AI: And that's where you come in CAPTAIN. Here is a radar which you can use to locate the missing COSMIC CUBES which have been scattered across the landscape
+	AI: And that's where you come in CAPTAIN. You are going to need to locate the missing COSMIC CUBES which have been scattered across the landscape.
 	AI: Goodluck CAPTAIN
 	<<wait .5>>
-	AI: Oh almost forgot. Take this RADIO as well. That way I can keep in touch and inform you of any developments. Alright, off you go
+	AI: Oh almost forgot. Take this RADIO as well. That way I can keep in touch and inform you of any developments. Alright, off you go.
 	<<stop>>
 <<elseif collected("mesacube") and collected("cavecube") and collected("hotspringscube") and not visited("SHIPASSESSMENT")>>
 	AI: Good work collecting all the COSMIC CUBES, CAPTAIN.
