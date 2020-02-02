@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public int gameplaySceneIndex = 2;
     public int uiSceneIndex = 3;
     public int levelSceneIndex = 4;
+    public int creditSceneIndex = 5;
     public bool initializeMouseSensitivity = true;
 
 
@@ -69,9 +70,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(controlMapperSceneIndex);
     }
 
+    [ContextMenu("Main Menu Scene")]
     public void ExitToMainMenu()
     {
         SceneManager.LoadScene(mainMenuSceneIndex);
+    }
+
+    [ContextMenu("Credit scene")]
+    public void CreditScene()
+    {
+        SceneManager.LoadScene(creditSceneIndex);
     }
 
     public void LockMouse()

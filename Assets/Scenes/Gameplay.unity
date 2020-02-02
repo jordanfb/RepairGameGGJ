@@ -2173,7 +2173,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9206b58809745314d9c042abb8300abb, type: 3}
   - {fileID: 8300000, guid: bb0e5c33d2e32eb41872c01dc0f92b16, type: 3}
   transitionTime: 1
-  playTrack0OnStart: 1
+  playTrack0OnStart: 0
   source1: {fileID: 1500880496}
   source2: {fileID: 1500880497}
 --- !u!82 &1500880496
