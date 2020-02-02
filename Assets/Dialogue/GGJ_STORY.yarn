@@ -8,6 +8,7 @@ position: 59,145
 	<<wait 1>> 
 	AI: CAPTAIN, you need to wake up now...
 	<<wait 3>> 
+	<<fadein>>
 	AI: HEYYY!!!!
 	<<wait 1>> 
 	AI: A-hem, sorry about that but Galatic protocol requires I inform you that the vessel has sustained some significant damage during our crash landing.
@@ -199,6 +200,7 @@ AI: Call Accepted
 SUZAN: Hello...?
 -> I'm coming home.
 SUZAN: Oh, thank goodness!
+<<exittomainmenu>>
 ===
 title: CHOICES.AWAY.CHECK
 tags: FINAL CHOICES
@@ -222,6 +224,7 @@ AI: So from this point onwards CAPTAIN, I am afraid you will be on your own.
 Ai: Trajectory set and Auto-pilot engaged. Shutting down System security protocols and interface. 
 <<wait 1>> 
 AI: Have a safe journey and please be safe, CAPTAIN.
+<<exittomainmenu>>
 ===
 title: CHOICES.STAY.CHECK
 tags: FINAL CHOICES
@@ -248,5 +251,5 @@ AI: Wait CAPTAIN!!!
 AI: Sensors are picking up several hostile creatures approaching the proximity of the vessel. Initial scans appear to indicate they are nocturnal carnivorous species.
 <<wait 1>> 
 AI: CAPTAIN please be safe out th...
-<<stop>> 
+<<exittomainmenu>>
 ===
