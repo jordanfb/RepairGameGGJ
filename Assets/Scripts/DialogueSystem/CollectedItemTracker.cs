@@ -23,8 +23,8 @@ public class CollectedItemTracker : MonoBehaviour
     }
 
     // called when you collect an item
-    public void CollectItem(string nodeName)
+    public void CollectItem(string itemName)
     {
-        _collectedItems.Add(nodeName);
+        _collectedItems.Add(itemName);
     }
 }

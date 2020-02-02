@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerDialogueManager : MonoBehaviour
 {
+    public bool canMoveWhileTalking = true;
     public SimpleMovement playerMovement; // disable movement when it's time to talk to things!
     public string interactionButton = "Interact";
 
@@ -27,8 +28,12 @@ public class PlayerDialogueManager : MonoBehaviour
             {
                 // then try talking with it!
                 Yarn.Unity.DialogueRunner runner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-                runner.StartDialogue(npc.talkToNode);
-                playerMovement.isAllowedToMove = !runner.isDialogueRunning; // only stop the player from moving if dialogue starts
+                if (!runner.isDialogueRunning)
+                {
+                    // don't start the dialogue if it's already talking, we'll have to account for that in our script by checking if we've said things already
+                    runner.StartDialogue(npc.talkToNode);
+                }
+                playerMovement.isAllowedToMove = !runner.isDialogueRunning || canMoveWhileTalking; // only stop the player from moving if dialogue actually starts
                 lastInteractedNPC = npc;
                 npc.Played();
             }
