@@ -106,12 +106,18 @@ public class SimpleMovement : MonoBehaviour
 
             characterController.SimpleMove(transform.forward * dpos.z + transform.right * dpos.x);
         }
+        else
+        {
+            characterController.SimpleMove(Vector3.zero); // move in place to stop the walking sound effects
+        }
 
 
         // move leg position!
-        if (characterController.velocity.sqrMagnitude > 0 || Mathf.Abs(df) > 0 || moveToRestingPosition)
+        if (characterController.velocity.sqrMagnitude > 0.1 || Mathf.Abs(df) > 0 || moveToRestingPosition)
         { 
             tiltBody.localRotation = Quaternion.Euler(input.z * tiltMultiplier, 0, -input.x * tiltMultiplier);
+
+            Debug.Log(characterController.velocity.sqrMagnitude + " : " + Mathf.Abs(df));
 
             // then we adjust the timer!
             legTimer += Time.fixedDeltaTime;
