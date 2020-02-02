@@ -38,7 +38,7 @@ public class SimpleMovement : MonoBehaviour
     [SerializeField]
     private string turnAxis = "Look Horizontal";
     [SerializeField]
-    private KeyCode sprintKey = KeyCode.LeftShift;
+    private string sprintButton = "Sprint";
 
 
     private int previousLegGroup = 0;
@@ -93,7 +93,7 @@ public class SimpleMovement : MonoBehaviour
             df = Sinput.GetAxis(turnAxis) * turnSpeed * Time.fixedDeltaTime;
             transform.Rotate(0, df, 0);
 
-            float currspeed = walkSpeed * (Input.GetKey(sprintKey) ? sprintMultiplier : 1) * Time.fixedDeltaTime;
+            float currspeed = walkSpeed * (Sinput.GetButton(sprintButton) ? sprintMultiplier : 1) * Time.fixedDeltaTime;
             Vector3 dpos = input * currspeed;
 
             characterController.SimpleMove(transform.forward * dpos.z + transform.right * dpos.x);

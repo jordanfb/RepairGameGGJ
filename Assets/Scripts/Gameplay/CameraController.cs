@@ -23,6 +23,10 @@ public class CameraController : MonoBehaviour
             usingFreecam = !usingFreecam;
             characterController.enabled = !usingFreecam;
             freecam.enabled = usingFreecam;
+
+            // lock the cursor in case we're switching from freecam to non-freecam
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         if (!usingFreecam)
