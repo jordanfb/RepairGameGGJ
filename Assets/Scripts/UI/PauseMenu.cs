@@ -55,6 +55,9 @@ public class PauseMenu : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        } else
+        {
+            Debug.Log("Not locked");
         }
         EventSystem.current.SetSelectedGameObject(previouslySelectedObject);
     }
