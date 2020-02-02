@@ -4,20 +4,20 @@ colorID: 1
 position: 59,145
 ---
 AI: Uhmm... excuse me
-<<wait 5>> 
+<<wait 1>> 
 AI: Captain, you need to wake up now...
-<<wait 5>> 
+<<wait 1>> 
 AI: HEYYY!!!!
-<<wait 3>> 
+<<wait 1>> 
 AI: A-hem, sorry about that but Galatic protocol requires I inform you that the vessel has sustained some significant damage during our crash landing.
 AI: Three core components, the COSMIC CUBES, have dislodged and need to be reinstalled for repairs to be complete.
 AI: And that's where you come in Captain. Here is a radar which you can use to locate the missing COSMIC CUBES which have been scattered across the landscape
 AI: Goodluck Captain
-<<wait 5>> 
+<<wait 1>> 
 AI: Oh almost forgot. Take this RADIO as well. That way I can keep in touch and inform you of any developments. Alright, off you go
 <<stop>> 
 ===
-title: HOT SPRINGS
+title: HOTSPRINGS
 tags: SUZAN
 colorID: 6
 position: 295,143
@@ -34,21 +34,20 @@ SUZAN: No, please come back
 SUZAN: I'm sure we can work this out together. I know you're better than what everyone is saying
 SUZAN: I know you did not mean to...it must have been an accident. I even have some proof...I think
 SUZAN: No matter what happens, I love you
-<<wait 3>> 
+<<wait 1>> 
 AI: End transmission
-<<wait 5>> 
+<<wait 1>> 
 AI: SUZAN, I can see a drawing from an artist of the same name. records indicates SUZAN is...your daughter
-<<wait 3>> 
+<<wait 1>> 
 AI: Message was received shortly before crash landing occurred. Unfortunately until repairs are finished interstellar communication services will not be operational.
 AI: Last significant transmission before this with SUZAN was recorded 3 years ago. 
-<<wait 5>> 
-AI: I would recommend calling her back...
-<<stop>> 
-<<if collected ("item 1","item 2","item 3">> 
+<<wait 1>> 
+AI: I would recommend calling her back... 
+<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
    AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
-<<end.if>> 
+<<endif>> 
 ===
 title: CAVE
 tags: MATTE
@@ -56,34 +55,33 @@ colorID: 0
 position: 533,135
 ---
 AI: CAPTAIN, sensors indicate a COSMIC CUBE is within the heart of the cave up ahead. 
-<<wait 5>> 
+<<wait 1>> 
 AI: Proceed with caution, as limited light sources are available.
 
 Incoming secure transmission. Message source SHERIFF MATTE
-<<wait 5>> 
+<<wait 1>> 
 MATTE: Dang it, I can't believe you escaped my clutches yet again. Argh...what is wrong with me.
 MATTE: I can't believe it...never in a thousand years would I ever have pegged you as a...
-MATTE:You're just like the scum we swore we'd put behind bars. What happened to our promise to keep the streets safe huh?
+MATTE: You're just like the scum we swore we'd put behind bars. What happened to our promise to keep the streets safe huh?
 MATTE: I'm so annoyed, and disgusted and... sad, I just don't want to believe it
 MATTE: The past six months chasing you over the galaxy have been trying both physically and mentally. You were my partner so we know each other in and out...but I'm going to say this
-<<wait 5>> 
-MATTE: Don't comeback. part of me is happy you have eluded capture for so long. And you know how the department is always understaffed.
+<<wait 1>> 
+MATTE: Don't come back. part of me is happy you have eluded capture for so long. And you know how the department is always understaffed.
 MATTE: So don't return, if you do...you know I'll have to carry out my duty
 MATTE: Be safe out there...partner
-<<wait 5>> 
+<<wait 1>> 
 AI: End transmission
-<<wait 5>> 
-AI: Ship records indicate that SHERIFF MATTE is member of the Galatic Patrol Head of sector XQVIX. Recent records show that he was recently promoted to that position roughly six months ago after the dishonorable discharge of...
-<<wait 5>> 
+<<wait 1>> 
+AI: Ship records indicate that SHERIFF MATTE is a member of the Galatic Patrol Head of sector XQVIX. Recent records show that he was recently promoted to that position roughly six months ago after the dishonorable discharge of...
+<<wait 1>> 
 AI: Uhm...O-ohh never mind CAPTAIN. I didn't mean to... I mean it's not as if... 
-<< wait 5>> 
-AI: ...Forget I said anything 
-<<stop>>
-<<if collected ("item 1","item 2","item 3">> 
+<< wait 1>> 
+AI: ...Forget I said anything
+<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
    AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
-<<end.if>> 
+<<endif>> 
 ===
 title: MESA
 tags: BANANA SALAMANDAER MEDIA
@@ -95,7 +93,7 @@ AI: Sensors also indicate that weather conditions have dropped dramatically, aut
 AI: You're set to go CAPTAIN.
 
 Incoming transmission Banana Salamander Media
-<<wait 5>> 
+<<wait 1>> 
 BSM: So we're here with the latest scoop on the story that has rocked the Galaxy.
 BSM: Yes, the case of the renegade Sheriff whom murdered his partner in cold blood leaving behind their adopted daughter
 BSM: What more, the fugitIve has been on the run for the past 6 months from the Galactic Patrol forces.
@@ -104,18 +102,17 @@ BSM: If you see them, do not approach them before you become a victim too
 BSM: For all the latest gossip from one corner of the galaxy to the next, tune into Banana Salamander Media.
 
 AI: End transmission. 
-<<wait 5>> 
+<<wait 1>> 
 AI: Records indicate that Banana Salamander Media is a hodge podge media outfit peddling sensational news and content with questionable accuracy. They are notorious for rampant misinformation and FAKE NEWS across the galaxy.
-<<wait 5>> 
+<<wait 1>> 
 AI: CAPTAIN, I would recommend disregarding the contents of that last transmission. It somehow bypassed SPAM filters due to the current state of disrepair.
-<<stop>>
-<<if collected ("item 1","item 2","item 3">> 
+<<if collected("item 1") and collected("item 2") and collected ("item 3")>> 
    AI: Alright, you have successfully acquired all three COSMIC CUBES. Now repairs can be completed, please return to the ship.
 <<else>> 
    AI: Required materials still outstanding CAPTAIN. Please collect remaining items.
-<<end.if>> 
+<<endif>> 
 ===
-title: SHIP ASSESSMENT
+title: SHIPASSESSMENT
 tags: FINAL CHOICES
 colorID: 0
 position: 1008,107
@@ -126,52 +123,50 @@ AI:Reinstating interstellar communication elements and navigation
 AI: REBOOTING 
 AI: Running final diagnostics, Green light confirmed
 AI: ALL SYSTEMS OPERATIONAL
-<< wait 5>> 
+<< wait 1>> 
 AI: Awaiting orders CAPTAIN
 -> Return to source destination
    AI: Returning to launch destination. recalibrating coordinates and plotting new trajectory
 AI: CAPTAIN, if I may be so bold
-<<wait 5>> 
+<<wait 1>> 
 AI: Logic dictates that this course of action may have some severe repercussions. However, it also provides an avenue by which you can repair what has been damaged.
 AI: I possess all relevant records intact from the prior year which can be processed accordingly by the relevant authorities.
 AI: Things will work out somehow CAPTAIN.
-<<wait 5>> 
+<<wait 1>> 
 AI: Incoming transmission... caller ID SUZAN
-<<wait 5>> 
+<<wait 1>> 
 AI: Call Accepted
 SUZAN: Hello...?
-<<wait 5>> 
+<<wait 1>> 
 SUZAN: Oh, thank goodness!
-<<stop>> 
 -> Continue to final destination
    AI: Final destination set for the TOFFEE NOVEL SYSTEM
 AI: Location is not currently governed by the Galatic Patrol elements. Travel to this System is highly advised against.
-<<wait 5>> 
+<<wait 1>> 
 AI: So the decision is to run away? I cannot say I understand your command CAPTAIN but my programming is to support you in your endeavors.However in order for you to complete travel to this location I will have to override my security protocols and go off-line.
 AI: So from this point onwards CAPTAIN, I am afraid you will be on your own.
-<<wait 5>> 
+<<wait 1>> 
 Ai: Trajectory set and Auto-pilot engaged. Shutting down System security protocols and interface. 
 <<wait 4>> 
 AI: Have a safe journey and please be safe, CAPTAIN.
-<<stop>> 
 -> Abort
    AI:Hmmm, Uhm... CAPTAIN, are you certain this is the best course of action?
-<<wait 5>> 
+<<wait 1>> 
 AI: Preliminary scans of the planet indicate it is currently not inhabited but possess limited resources.
 AI: Current supplies are estimated to last for a month at best before survival cannot be guaranteed.
-<<wait 5>> 
+<<wait 1>> 
 AI: If that is your choice CAPTAIN, then systems will immediately go into life support mode to last as long as possible.
 AI: However, that will shut down the main interface system, so i will not be able to offer assistance.
-<<wait 5>> 
+<<wait 1>> 
 AI: I am not sure I understand this decision but my job is to facilitate your orders so shut down sequence will begin momentarily
 AI: Wait CAPTAIN!!!
-<<wait 5>> 
+<<wait 1>> 
 AI: Sensors are picking up several hostile creatures approaching the proximity of the vessel. Initial scans appear to indicate they are nocturnal carnivorous species.
-<<wait 5>> 
+<<wait 1>> 
 AI: Captain please be safe out th...
 <<stop>> 
 ===
-title: Return to source destination
+title: RETURN_TO_SOURCE
 tags: 
 colorID: 0
 position: 1246,157
@@ -180,20 +175,20 @@ AI: Return to source destination
 
 AI: Returning to launch destination. recalibrating coordinates and plotting new trajectory
 AI: CAPTAIN, if I may be so bold
-<<wait 5>> 
+<<wait 1>> 
 AI: Logic dictates that this course of action may have some severe repercussions. However, it also provides an avenue by which you can repair what has been damaged.
 AI: I possess all relevant records intact from the prior year which can be processed accordingly by the relevant authorities.
 AI: Things will work out somehow CAPTAIN.
-<<wait 5>> 
+<<wait 1>> 
 AI: Incoming transmission... caller ID SUZAN
-<<wait 5>> 
+<<wait 1>> 
 AI: Call Accepted
 SUZAN: Hello...?
-<<wait 5>> 
+<<wait 1>> 
 SUZAN: Oh, thank goodness!
 <<stop>> 
 ===
-title: Continue to final destination
+title: CONTINUE_TO_FINAL
 tags: 
 colorID: 0
 position: 1207,422
@@ -201,10 +196,10 @@ position: 1207,422
 AI: Continue to final destination
 AI: Final destination set for the TOFFEE NOVEL SYSTEM
 AI: Location is not currently governed by the Galatic Patrol elements. Travel to this System is highly advised against.
-<<wait 5>> 
+<<wait 1>> 
 AI: So the decision is to run away? I cannot say I understand your command CAPTAIN but my programming is to support you in your endeavors.However in order for you to complete travel to this location I will have to override my security protocols and go off-line.
 AI: So from this point onwards CAPTAIN, I am afraid you will be on your own.
-<<wait 5>> 
+<<wait 1>> 
 Ai: Trajectory set and Auto-pilot engaged. Shutting down System security protocols and interface. 
 <<wait 4>> 
 AI: Have a safe journey and please be safe, CAPTAIN.
@@ -218,18 +213,18 @@ position: 851,412
 AI: Abort
 
 AI: Uhm... CAPTAIN, are you certain this is the best course of action?
-<<wait 5>> 
+<<wait 1>> 
 AI: Preliminary scans of the planet indicate it is currently not inhabited but possess limited resources.
 AI: Current supplies are estimated to last for a month at best before survival cannot be guaranteed.
-<<wait 5>> 
+<<wait 1>> 
 AI: If that is your choice CAPTAIN, then systems will immediately go into life support mode to last as long as possible.
 AI: However, that will shut down the main interface system, so i will not be able to offer assistance.
-<<wait 5>> 
+<<wait 1>> 
 AI: I am not sure I understand this decision but my job is to facilitate your orders so shut down sequence will begin momentarily
 AI: Wait CAPTAIN!!!
-<<wait 5>> 
+<<wait 1>> 
 AI: Sensors are picking up several hostile creatures approaching the proximity of the vessel. Initial scans appear to indicate they are nocturnal carnivorous species.
-<<wait 5>> 
+<<wait 1>> 
 AI: Captain please be safe out th...
 <<stop>> 
 ===
