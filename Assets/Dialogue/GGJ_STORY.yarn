@@ -25,7 +25,7 @@ position: 295,143
 AI: Captain, my sensors are indicating that a COSMIC CUBE is nearby. I sense some natural water source...hot springs perhaps? 
 
 AI: Incoming transmission. Message source SUZAN
-<<wait 4>> 
+<<wait 1>> 
 SUZAN: Hey, hello?!
 SUZAN: Come on pick up!
 SUZAN: Ugh...with all the advancements in interstellar technology, still getting crappy service
@@ -147,7 +147,7 @@ AI: So the decision is to run away? I cannot say I understand your command CAPTA
 AI: So from this point onwards CAPTAIN, I am afraid you will be on your own.
 <<wait 1>> 
 Ai: Trajectory set and Auto-pilot engaged. Shutting down System security protocols and interface. 
-<<wait 4>> 
+<<wait 1>> 
 AI: Have a safe journey and please be safe, CAPTAIN.
 -> Abort
    AI:Hmmm, Uhm... CAPTAIN, are you certain this is the best course of action?
@@ -201,7 +201,7 @@ AI: So the decision is to run away? I cannot say I understand your command CAPTA
 AI: So from this point onwards CAPTAIN, I am afraid you will be on your own.
 <<wait 1>> 
 Ai: Trajectory set and Auto-pilot engaged. Shutting down System security protocols and interface. 
-<<wait 4>> 
+<<wait 1>> 
 AI: Have a safe journey and please be safe, CAPTAIN.
 <<stop>> 
 ===
