@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: -146}
+  m_AnchoredPosition: {x: -219, y: -199.8}
   m_SizeDelta: {x: 290, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315179941
@@ -1255,6 +1255,7 @@ MonoBehaviour:
   gameplaySceneIndex: 2
   uiSceneIndex: 3
   levelSceneIndex: 4
+  creditSceneIndex: 5
   initializeMouseSensitivity: 1
 --- !u!4 &1484270742
 Transform:
@@ -1306,7 +1307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: -85}
+  m_AnchoredPosition: {x: -219, y: -111.399994}
   m_SizeDelta: {x: 290, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677859084
@@ -1351,7 +1352,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1677859085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1484270741}
+        m_MethodName: CreditScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1677859085
 MonoBehaviour:
   m_ObjectHideFlags: 0
