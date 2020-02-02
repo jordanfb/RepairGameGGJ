@@ -43,6 +43,7 @@ public class SimpleMovement : MonoBehaviour
 
     private int previousLegGroup = 0;
     private float legTimer = 0;
+    private bool isSprinting = false;
 
 
     [Serializable]
@@ -90,10 +91,17 @@ public class SimpleMovement : MonoBehaviour
                 input.Normalize();
             }
 
+            if (input.sqrMagnitude == 0)
+            {
+                isSprinting = false; // stop sprinting when we stopped trying to move
+            }
+
             df = Sinput.GetAxis(turnAxis) * turnSpeed * Time.fixedDeltaTime;
             transform.Rotate(0, df, 0);
 
-            float currspeed = walkSpeed * (Sinput.GetButton(sprintButton) ? sprintMultiplier : 1) * Time.fixedDeltaTime;
+            isSprinting |= Sinput.GetButton(sprintButton); // if we're sprinting stay sprinting
+
+            float currspeed = walkSpeed * (isSprinting ? sprintMultiplier : 1) * Time.fixedDeltaTime;
             Vector3 dpos = input * currspeed;
 
             characterController.SimpleMove(transform.forward * dpos.z + transform.right * dpos.x);
