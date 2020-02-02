@@ -13,6 +13,12 @@ public class Leg : MonoBehaviour
     Transform goalFootPos = null;
     [SerializeField]
     Vector3 footPos = Vector3.zero;
+    
+    [Space]
+    [SerializeField]
+    AudioSource footstepSound;
+    [SerializeField]
+    AudioClip[] footsteps = null;
 
     [SerializeField]
     private float maxLegStretch = 1.5f;
@@ -41,6 +47,12 @@ public class Leg : MonoBehaviour
     {
         // for testing just have it move directly.
         footPos = goalFootPos.position; // move it to the goal position.
+        if (footstepSound)
+        {
+            AudioClip c = footsteps[Random.Range(0, footsteps.Length)];
+            footstepSound.clip = c;
+            footstepSound.PlayDelayed(Random.Range(0, .01f));
+        }
     }
 
     public void StopLeg()

@@ -297,6 +297,10 @@ MonoBehaviour:
   hip: {fileID: 112532254}
   goalFootPos: {fileID: 980738739}
   footPos: {x: 0.272, y: 0, z: 0}
+  footstepSound: {fileID: 980738740}
+  footsteps:
+  - {fileID: 8300000, guid: c619ddfd49992784ba8bf0936a3bd0ff, type: 3}
+  - {fileID: 8300000, guid: fbf701e3aa1fc844d8120f48fe8489a6, type: 3}
   maxLegStretch: 1.5
 --- !u!1 &163674593
 GameObject:
@@ -731,6 +735,10 @@ MonoBehaviour:
   hip: {fileID: 454942231}
   goalFootPos: {fileID: 830398824}
   footPos: {x: -0.272, y: 0, z: 0}
+  footstepSound: {fileID: 830398825}
+  footsteps:
+  - {fileID: 8300000, guid: c619ddfd49992784ba8bf0936a3bd0ff, type: 3}
+  - {fileID: 8300000, guid: fbf701e3aa1fc844d8120f48fe8489a6, type: 3}
   maxLegStretch: 1.5
 --- !u!4 &454942231
 Transform:
@@ -1376,6 +1384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830398824}
+  - component: {fileID: 830398825}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1397,6 +1406,102 @@ Transform:
   m_Father: {fileID: 454942231}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &830398825
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830398823}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c619ddfd49992784ba8bf0936a3bd0ff, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &854650905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1739,8 @@ MonoBehaviour:
   hip: {fileID: 870800746}
   goalFootPos: {fileID: 1362032199}
   footPos: {x: 0.948148, y: 1.0688267, z: 0}
+  footstepSound: {fileID: 0}
+  footsteps: []
   maxLegStretch: 1.5
 --- !u!1 &980738738
 GameObject:
@@ -1644,6 +1751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980738739}
+  - component: {fileID: 980738740}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1665,6 +1773,102 @@ Transform:
   m_Father: {fileID: 112532254}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &980738740
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980738738}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fbf701e3aa1fc844d8120f48fe8489a6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1079022174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,6 +2048,8 @@ MonoBehaviour:
   hip: {fileID: 1090328339}
   goalFootPos: {fileID: 380356254}
   footPos: {x: -0.948148, y: 1.0688267, z: 0}
+  footstepSound: {fileID: 0}
+  footsteps: []
   maxLegStretch: 1.5
 --- !u!1 &1362032198
 GameObject:
@@ -1944,7 +2150,7 @@ MonoBehaviour:
   strafeAxis: Horizontal
   forwardsAxis: Vertical
   turnAxis: Look Horizontal
-  sprintKey: 304
+  sprintButton: Sprint
 --- !u!143 &1404154484
 CharacterController:
   m_ObjectHideFlags: 0
