@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde9dc4231fec454eb1534db8ba997d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 266047ad8d9a3ed409bfb3776f51d981, type: 3}
+  clip: {fileID: 8300000, guid: bb0e5c33d2e32eb41872c01dc0f92b16, type: 3}
   onlyChangeOnce: 1
 --- !u!114 &167088232
 MonoBehaviour:
@@ -445,6 +445,7 @@ MonoBehaviour:
   characterName: Hot Springs
   talkToNode: HOTSPRINGS
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!65 &167088233
 BoxCollider:
@@ -632,6 +633,7 @@ MonoBehaviour:
   characterName: CAVE.CUBE
   talkToNode: CAVE.CUBE
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!1 &247872996
 GameObject:
@@ -758,7 +760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde9dc4231fec454eb1534db8ba997d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: bb0e5c33d2e32eb41872c01dc0f92b16, type: 3}
+  clip: {fileID: 8300000, guid: 266047ad8d9a3ed409bfb3776f51d981, type: 3}
   onlyChangeOnce: 1
 --- !u!114 &249791033
 MonoBehaviour:
@@ -775,6 +777,7 @@ MonoBehaviour:
   characterName: MESA
   talkToNode: MESA
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!65 &249791034
 BoxCollider:
@@ -1510,6 +1513,7 @@ MonoBehaviour:
   characterName: HOTSPRINGS.CUBE
   talkToNode: HOTSPRINGS.CUBE
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!1 &651022796
 GameObject:
@@ -1547,6 +1551,7 @@ MonoBehaviour:
   characterName: Sally
   talkToNode: Sally.Sorry
   onlyPlayOnce: 0
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!65 &651022798
 BoxCollider:
@@ -1717,6 +1722,7 @@ MonoBehaviour:
   characterName: Cave
   talkToNode: CAVE
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!65 &714677818
 BoxCollider:
@@ -2180,6 +2186,7 @@ MonoBehaviour:
   characterName: MESA.CUBE
   talkToNode: MESA.CUBE
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 0}
 --- !u!1001 &923525540
 PrefabInstance:
@@ -2236,7 +2243,7 @@ PrefabInstance:
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}
@@ -2595,6 +2602,131 @@ Transform:
   m_Father: {fileID: 870800746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1371526396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1371526402}
+  - component: {fileID: 1371526401}
+  - component: {fileID: 1371526400}
+  - component: {fileID: 1371526399}
+  - component: {fileID: 1371526398}
+  - component: {fileID: 1371526397}
+  m_Layer: 0
+  m_Name: EndingDialogueTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1371526397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde9dc4231fec454eb1534db8ba997d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: ea462cab9fc97e9458d60c7aa78fcec7, type: 3}
+  onlyChangeOnce: 1
+--- !u!114 &1371526398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dc641116cd36548863a20b56fec010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: SHIPASSESSMENT
+  talkToNode: SHIPASSESSMENT
+  onlyPlayOnce: 0
+  resetImmediately: 0
+  scriptToLoad: {fileID: 0}
+--- !u!65 &1371526399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1371526400
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 247a692b4ab40424eb62d238e05454d9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1371526401
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1371526402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371526396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.96, y: -0.05, z: 21.1}
+  m_LocalScale: {x: 6.678112, y: 6.678112, z: 18.445612}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404154481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,6 +2828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMoveWhileTalking: 0
+  resetNPCTime: 5
   playerMovement: {fileID: 1404154483}
   interactionButton: Interact
 --- !u!54 &1404154486
@@ -3480,6 +3613,7 @@ MonoBehaviour:
   characterName: Ship
   talkToNode: Ship
   onlyPlayOnce: 1
+  resetImmediately: 0
   scriptToLoad: {fileID: 2480198943629176163, guid: 24f22b038d584445ba4f43344cc5733d,
     type: 3}
 --- !u!1 &1949247943
@@ -3515,8 +3649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde9dc4231fec454eb1534db8ba997d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 9206b58809745314d9c042abb8300abb, type: 3}
-  onlyChangeOnce: 0
+  clip: {fileID: 8300000, guid: ea462cab9fc97e9458d60c7aa78fcec7, type: 3}
+  onlyChangeOnce: 1
 --- !u!114 &1949247945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3529,9 +3663,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2dc641116cd36548863a20b56fec010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Sally
-  talkToNode: Sally
+  characterName: SHIP
+  talkToNode: SHIP
   onlyPlayOnce: 0
+  resetImmediately: 1
   scriptToLoad: {fileID: 2480198943629176163, guid: 003ac425b62bff44b942fa2d2d6f66d8,
     type: 3}
 --- !u!65 &1949247946
@@ -3601,8 +3736,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949247943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: 1.615, z: -0.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.52, y: 1.615, z: 9.24}
+  m_LocalScale: {x: 14.914027, y: 14.914027, z: 41.19403}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -3662,7 +3797,7 @@ PrefabInstance:
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}
@@ -3790,6 +3925,7 @@ MonoBehaviour:
   characterName: Sally
   talkToNode: Sally
   onlyPlayOnce: 0
+  resetImmediately: 0
   scriptToLoad: {fileID: 2480198943629176163, guid: 8b6ae1e8d32e840f0b3fd0b033e52253,
     type: 3}
 --- !u!114 &2098180895
@@ -3861,7 +3997,7 @@ PrefabInstance:
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1538994707035536303, guid: 68452f687981e9c4faefd30d9c8cecd2,
         type: 3}

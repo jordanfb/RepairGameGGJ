@@ -117,8 +117,6 @@ public class SimpleMovement : MonoBehaviour
         { 
             tiltBody.localRotation = Quaternion.Euler(input.z * tiltMultiplier, 0, -input.x * tiltMultiplier);
 
-            Debug.Log(characterController.velocity.sqrMagnitude + " : " + Mathf.Abs(df));
-
             // then we adjust the timer!
             legTimer += Time.fixedDeltaTime;
             legTimer %= timePerLegGroup * legGroups.Count;

@@ -36,6 +36,7 @@ public class OurNPC : MonoBehaviour
 
     public string talkToNode = "";
     public bool onlyPlayOnce = false;
+    public bool resetImmediately = false; // whether or not the dialogue trigger should reset immediately after you leave it. Most of them should be false if not all.
 
     [Header("Optional")]
     public YarnProgram scriptToLoad;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerDialogueManager : MonoBehaviour
 {
     public bool canMoveWhileTalking = true;
+    public float resetNPCTime = 5f;
     public SimpleMovement playerMovement; // disable movement when it's time to talk to things!
     public string interactionButton = "Interact";
 
@@ -44,8 +45,18 @@ public class PlayerDialogueManager : MonoBehaviour
     {
         OurNPC npc = other.gameObject.GetComponentInChildren<OurNPC>();
         //print("Left collision with " + other.gameObject.name);
-        if (npc == lastInteractedNPC)
+        if (lastInteractedNPC != null && lastInteractedNPC.resetImmediately && npc == lastInteractedNPC)
         {
+            StartCoroutine(ResetLastInteractedNPCAfterTime(npc, resetNPCTime));
+        }
+    }
+
+    private IEnumerator ResetLastInteractedNPCAfterTime(OurNPC lastNPC, float t)
+    {
+        yield return new WaitForSeconds(t);
+        if (lastNPC == lastInteractedNPC)
+        {
+            // only reset it if we haven't talked to another node since
             lastInteractedNPC = null; // reset the node so we can talk to it again
         }
     }
