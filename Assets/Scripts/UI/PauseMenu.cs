@@ -18,7 +18,6 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         fixedDeltaTime = Time.fixedDeltaTime;
-        print(Time.fixedDeltaTime);
     }
 
     private void Update()
